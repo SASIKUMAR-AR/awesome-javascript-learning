@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>veritas</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style type="text/css">
+			
+
+.fa {
+		padding-right: 23px;
+		padding-left: 15px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		font-size: 15px;
+		width: 10px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 6px;
+		border-radius: 50%;
+}
+
+.fa:hover {
+				color: black;
+				background-color: white;
+				border: 2px solid black; 
+}
+.fa-facebook {
+		background:black;
+		color: white;
+}.fa-twitter {
+		background: black;
+		color: white;
+}.fa-instagram {
+		background: black;
+		color: white;
+}
+.btn{
+	border-radius: 40px;
+	padding: 10px 20px;
+	border: 2px solid;
+}		
+
+body{
+		background-color: #e8e8e8;
+}
+
+.con{
+		margin-top: 180px;
+		font-family: karla;
+		font-size: 90px;
+		color: black;
+		line-height: 90px;
+}
+
+.con1{
+		font-size: 25px;
+}
+
+.con2{
+		text-align: center;
+
+}
+
+li{
+		font-family:'Fira Sans', sans-serif;
+		color: black;
+}
+
+.con2 p{
+		font-size: 20px; 
+		font-family: 'Fira Sans', sans-serif; 
+		word-spacing:2px; 
+		color: #40454B;
+}
+
+.con3{
+		background: linear-gradient(to bottom, #e8e8e8 -8%, #D3D6D8 100%);
+		height: 160px;
+		text-align: center;
+		border-radius: 10px;
+}
+
+.cool-link {
+			display: inline-block;
+			color: #000;
+			text-decoration: none;
+}
+
+.cool-link::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 2px;
+			background: linear-gradient(to right, red 20%, skyblue 80%);
+			transition: width .3s;
+}
+
+.cool-link:hover::after {
+			width: 100%;
+			//transition: width .3s;
+}
+
+.con3 p{
+		text-align: center;
+		line-height: 13px;
+}
+
+.con4{
+		text-align: center;
+		letter-spacing: 1px;
+		line-height: 50px;
+}
+
+.con4 a{
+		text-decoration: none; 
+		color: #40454B; 
+		font-size: 17px;
+		color: grey;
+}
+
+.con4 h5{
+		font-size: 16px;
+		font-family:'Fira Sans',sans-serif;
+		color: #40454B;
+}
+
+.con5 a{
+					text-decoration: none;
+					font-size: 17px;
+					color: #40454B;
+}
+
+
+
+
+.container1 {
+		position: relative;
+		width: 76%;
+		text-align: center;
+		
+
+}
+
+.container2 {
+		position: relative;
+		width: 76%;
+		text-align: center;
+		
+
+}
+
+
+
+.image {
+		
+		width: 100%;
+		height: auto;
+		height: 300px;
+}
+
+.overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color:  #e8e8e8;
+		overflow: hidden;
+		width: 0;
+		height: 100%;
+		transition: .5s ease;
+}
+
+.container1:hover .overlay {
+		width: 100%;
+}
+
+.container3:hover .overlay {
+		width: 100%;
+}
+
+.container4:hover .overlay {
+		width: 100%;
+}
+
+.text {
+		color: black;
+		font-family:karla;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		white-space: nowrap;
+}
+
+
+.text1 button{
+		background-color: #e8e8e8;
+		border-radius: 40px;
+		border:2px solid black;
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 15px;
+		padding: 8px 22px;
+}
+
+.text1 button:hover{
+		background-color: black;
+		color: white;
+		transition: 0.3s;
+}
+
+.text2 button{
+		background-color: black;
+		border-radius: 40px;
+		border:2px solid white;
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 15px;
+		padding: 5px 22px;
+		color: white
+}
+
+.text2 button:hover{
+		background-color: #e8e8e8;
+		color: black;
+		transition: 0.3s;
+} 
+
+.text button{
+		background-color: #e8e8e8;
+		border-radius: 40px;
+		border:2px solid black;
+		font-family: 'Fira Sans', sans-serif;
+		font-size: 15px;
+		padding: 8px 20px;
+}
+
+.text button:hover{
+		background-color: black;
+		color: white;
+		transition: 0.3s;
+} 
+
+.hov:hover{
+	  transform: scale(1.2);
+}
+
+.center {
+  position: absolute;
+  top:50%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+}
+
+.container6 {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.co h4{
+	text-align: left; 
+	font-family: karla; 
+	line-height: 50px;
+}
+
+.co p{
+	font-family: 'Fira Sans', sans-serif; 
+	font-size: 12px; 
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+.co img{
+	border-radius: 10px;
+}
+
+.containe {
+  position: relative;
+  width: 100%;
+}
+
+.containe:hover .overlay {
+  width: 100%;
+}
+
+.con6{
+		background-color: #0F1415;
+		height: 150px;
+		text-align: center;
+		border-radius: 10px;
+		padding-top: 40px;
+		color: white;
+		box-shadow:0 16px 45px 0 rgba(78, 78, 78, 0.75);
+}
+
+.con7{
+		background-color: #151B1C;
+		height: 150px;
+		text-align: center;
+		border-radius: 10px;
+		padding-top: 40px;
+		color: white;
+		box-shadow:0 16px 45px 0px rgba(78, 78, 78, 0.75);
+}
+
+.con6:hover{
+		transform: scale(1);
+		background: #0F1415;
+		z-index: 2;
+		box-shadow: none;
+		color: white;
+		border-radius: 10px;
+		height: 150px;
+		top:6px;
+	}
+
+	.con7:hover{
+		transform: scale(1);
+		background: #0F1415;
+		z-index: 2;
+		box-shadow: none;
+		color: white;
+		border-radius: 10px;
+		height: 150px;
+		top:6px;
+	}
+
+	.container7 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mySlides {display:none;}
+
+.cons{
+		position: absolute;
+		left: 0px;
+		letter-spacing: 1px;
+		line-height: 50px;
+}
+
+.cons a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.hove {
+  position: relative;
+  width: 100%;
+}
+
+.ima {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.midd {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hove:hover .ima {
+  opacity: 0.2;
+}
+
+.hove:hover .midd {
+  opacity: 1.5;
+}
+
+.tex{
+	transition: .5s ease;
+	overflow: hidden;
+}
+
+.vl {
+  border-left: 1px solid grey;
+  height: 380px;
+  
+}
+
+.list p{
+	line-height: 10px;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+.list a{
+	text-decoration: none;
+	color: black;
+
+
+}
+
+.lin a{
+    text-decoration: none;
+    color:blue;
+}
+
+
+
+</style>
+
+</head>
+<body>
+			<nav class="navbar navbar-expand-lg  navbar-light">
+		<a class="navbar-brand" href="#"><img src="images/log.png" width="50%"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+								<a class="navbar-brand" href="#"></a>
+						</li>
+				</ul>
+				<ul class="navbar-nav">
+						<li class="nav-item">
+								<a class="nav-link cool-link" href="#" style="color: black">About as</a>
+						</li>&nbsp&nbsp&nbsp&nbsp&nbsp
+						<li class="nav-item">
+								<a class="nav-link cool-link" href="#" style="color: black">Services</a>
+						</li>&nbsp&nbsp&nbsp&nbsp&nbsp
+						<li class="nav-item">
+								<a class="nav-link cool-link" href="#" style="color: black">Works</a>
+						</li>&nbsp&nbsp&nbsp&nbsp&nbsp
+						<li class="nav-item">
+								<a class="nav-link cool-link" href="#" style="color: black">Faq</a>
+						</li>&nbsp&nbsp&nbsp&nbsp&nbsp
+							<li class="nav-item">
+								<a class="nav-link cool-link" href="#" style="color: black">Blog</a>
+						</li>&nbsp&nbsp&nbsp&nbsp&nbsp
+							<li class="nav-item">
+								<a class="nav-link cool-link" href="#" style="color: black">Contact as</a>
+						</li>&nbsp&nbsp&nbsp&nbsp&nbsp
+							<li class="nav-item">
+						<button class="btn btn-outline-success" type="submit" style="opacity: 0.7">Buy templates</button>
+						</li>&nbsp&nbsp&nbsp
+					</ul>
+		</div>
+</nav>
+
+<div class="container con">
+		<p>We build</p>
+		<p> products</p>
+		<p> that users love</p>
+</div>
+<div class="container con1">
+				<p style="font-family:'Fira Sans', sans-serif;">Cras et nulla id lorem vulputate pulvinar eget non<br> neque. Proin feugiat justo vitae euismod.</p>
+				<a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-instagram"></i></a>
+</div><br><br><br><br><br><br>
+<div class="container-fluid con2">
+		<h1 style="font-size: 42px; font-family: karla;">Our Rock and Roll</h1>
+		<p>With more than 20 years of experience we can<br> deliver the best product design.</p>
+</div><br><br>
+
+<div class="container ">
+		<div class="row">
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con3">
+						<div class="container-fluid" style="text-align: left;"><img src="images/logo1.png" style="width: 40px; height: 40px;">&nbsp&nbsp&nbsp
+						<font style="font-size: 25px; font-family:Karla ">About Us</font>
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPellentesque sit amet odio nisi</p>
+						<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp phasellus quis lorem leo.</p>
+						<a href="" style="color: grey; text-decoration: none;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Learn more ></a>
+						</div>
+				</div>    
+		</div>
+</div></div>
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con3">
+						<div class="container-fluid" style="text-align: left;"><img src="images/logo2.png" style="width: 40px; height: 40px;">&nbsp&nbsp&nbsp
+						<font style="font-size: 25px; font-family:Karla ">Our Work</font>
+						<p> &nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbspPellentesque sit amet odio nisi</p>
+						<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspphasellus quis lorem leo.</p>
+						<a href="" style="color: grey; text-decoration: none;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Learn more ></a>
+				</div>
+				</div>    
+		</div>
+</div></div>
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con3"><div class="container-fluid" style="text-align: left;"><img src="images/logo3.png" style="width: 40px; height: 40px;">&nbsp&nbsp&nbsp
+						<font style="font-size: 25px; font-family:Karla ">Our Services</font>
+						<p>&nbsp  &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPellentesque sit amet odio nisi</p>
+						<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp phasellus quis lorem leo.</p>
+						<a href="" style="color: grey; text-decoration: none;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLearn more ></a>
+				</div></div>    
+		</div>
+</div></div>
+				
+		</div>
+</div><br><br><br><br><br><br>
+
+
+
+<div class="container-fluid con4"><h5>intro</h5>
+		<h1 style="font-family: karla; font-size: 50px;">We’re Changing the Way You<br> Work with Agencies</h1>
+		<a href="">Learm more about us ></a>
+</div><br><br>
+
+<div class="container-fluid con5">
+		<div class="container ">
+		<div class="row">
+				<div class="col-md-7">
+		<img class="img-fluid" src="images/imgs1.jpeg" style="width: 560px; height: 450px;">
+</div>
+<div class="col-md-5"><br><br><br><br><br>
+		<h1 style="font-family: karla;letter-spacing: 2px;">Not just your regular design agency</h1><br>
+		<p style="font-family: 'Fira Sans', sans-serif; font-size: 20px; letter-spacing: 0.6px;">Phasellus dignissim est tempor eros pulvinar luctus nam vulputate risus a efficitur cursus.</p>
+		<a href="">Our works ></a>
+</div>
+</div>
+</div>
+</div><br><br>
+
+<div class="container-fluid con5">
+		<div class="container ">
+		<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-5"><br><br><br><br><br><br><br>
+		<h1 style="font-family: karla;letter-spacing: 2px; font-size: 35px;">The future of design starts with you</h1><br>
+		<p style="font-family: 'Fira Sans', sans-serif; font-size: 20px; letter-spacing:0.6px;">Curabitur euismod pellentesque dapibus maecenas a pretium odio morbi porta.</p>
+		<a href="">Our Services ></a>
+</div>
+				<div class="col-md-6" align="right">
+		<img class="img-fluid" src="images/imgs2.jpeg" style="width: 560px; height: 640px;">
+</div>
+</div>
+</div>
+</div><br><br>
+
+<div class="container-fluid con5">
+		<div class="container ">
+		<div class="row">
+				<div class="col-md-7">
+		<img class="img-fluid" src="images/imgs3.jpeg" style="width: 560px; height: 450px;">
+</div>
+<div class="col-md-5"><br><br><br><br><br>
+		<h1 style="font-family: karla;letter-spacing: 2px;">Not just your regular design agency</h1><br>
+		<p style="font-family: 'Fira Sans', sans-serif; font-size: 20px; letter-spacing: 0.6px;">Phasellus dignissim est tempor eros pulvinar luctus nam vulputate risus a efficitur cursus.</p>
+		<a href="">Contact Us ></a>
+</div>
+</div>
+</div>
+</div><br><br>
+
+<div class="container-fluid " align="center"><h5 style="color:grey; font-size: 15px; letter-spacing: 1px;font-family: 'Fira Sans', sans-serif;">featured</h5>
+		<h1 style="font-family: karla; font-size: 53px; letter-spacing: 1px;">Our Favorite Works</h1>
+		<p style="font-size: 20px; letter-spacing: 1px;">With more than 20 years of experience we can<br> deliver the best product design.</p>
+</div><br><br><br>
+
+<div class="container-fluid container1">
+		<div class="row ">
+				<div class="col-md-12">
+		<img src="images/imgs4.jpg" alt="Avatar" class="image-fluid" width="100%">
+		<div class="overlay">
+				<div class="text"><h2>Formula One</h2><button>Visit work</button></div>
+</div>
+</div>
+</div>
+</div><br>
+
+
+<div class="container-fluid container2">
+		<div class="row ">
+				<div class="col-md-6">
+<div class="container3">
+		<img src="images/imgs5.jpg" alt="Avatar" width="100%">
+		<div class="overlay">
+				<div class="text"><h2><font style="font-size: 25px;">I9</font> Woo</h2><button>Visit work</button></div>
+		</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="container4">
+		<img src="images/imgs6.jpg" alt="Avatar" class="image-fluid" width="100%">
+		<div class="overlay">
+				<div class="text"><h2><font style="font-size: 25px;">48</font> North</h2><button>Visit work</button></div>
+		</div>
+</div>
+</div>
+</div>
+</div><br><br><br>
+
+<div class="container-fluid con5">
+		<div class="container ">
+		<div class="row">
+				<div class="col-md-5"><br><br><br><br><br><br><br><br>
+		<h1 style="font-family: karla;letter-spacing: 2px; font-size: 38px;">We strive for the best<br> with our clients</h1><br>
+		<p style="font-family: 'Fira Sans', sans-serif; font-size: 20px; letter-spacing:0.4px;">Curabitur euismod pellentesque dapibus maecenas a pretium odio morbi porta<br> congue tempus.</p>
+		<a href="" class="text1"><button>Learn more</button></a>
+</div>
+<div class="col-md-1"></div>
+				<div class="col-md-5" align="right">
+		<img class="img-fluid" src="images/imgs7.png" style="width: 560px; height: 650px;">
+</div>
+<div class="col-sm-1 hov"><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="images/imgs8.png" class="image-fluid" width="75%" height="8%"></div>
+</div>
+</div>
+</div><br><br>
+
+
+
+<img src="images/imgs9.jpg" class="image-fluid " width="50%" align="left">
+<div class="container6" style="line-height: 30px;">
+  <img src="images/imgs10.png"  class="image-fluid"  alt="Snow" style="width:50%;">
+  <div class="center">
+  	<h5 style="font-size: 15px; letter-spacing: 0.4px; line-height: 30px;">benefits</h5>
+  	<h1 style="font-family: karla;letter-spacing: 2px; font-size: 38px;">Not just your regular
+  design agency</h1><br>
+		<p style="font-family: 'Fira Sans', sans-serif; font-size: 20px; letter-spacing:0.8px;">Phasellus dignissim est tempor eros<br> pulvinar luctus nam vulputate risus a<br> efficitur cursus..</p>
+		<a href="" class="text2"><button>Learn more</button></a></div>
+</div><br><br><br><br><br><br>
+
+<div class="container-fluid con4"><h5>team</h5>
+		<h1 style="font-family: karla; font-size: 50px;">Our Magic Team</h1>
+		<p style="font-size: 20px; line-height: 35px;">With more than 20 years of experience we can<br> deliver the best product design.</p>
+		<a href=""></a>
+</div><br><br>
+
+	
+  <div class="container-fluid " align="center" style="width: 78%">
+		 <div class="row">
+
+			<div class="col-sm co"><div class="containe"><img src="images/imgs11.jpg" class="image-fluid" width="94%" height="450px"><div class="overlay">
+    <div class="text"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-instagram"></i></a></div>
+  </div>
+</div><h4>&nbspMaria Zurich</h4><p>&nbsp&nbspCEO</p></div>
+				<div class="col-sm co"><div class="containe"><img src="images/imgs12.jpg" class="image-fluid" width="94%" height="450px"><div class="overlay">
+    <div class="text"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-instagram"></i></a></div>
+  </div>
+</div><h4>&nbspMike Wong</h4><p>&nbsp&nbspDESIGNER</p></div>
+				<div class="col-sm co"><div class="containe"><img src="images/imgs13.jpg" class="image-fluid" width="94%" height="450px"><div class="overlay">
+    <div class="text"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-instagram"></i></a></div>
+  </div>
+</div><h4>&nbspThomas Zavala</h4><p>&nbsp&nbspDEVELOPER</p></div>
+				
+			</div>
+		</div><br><br><br><br><br>
+
+
+<div class="container-fluid con4"><h5>features</h5>
+		<h1 style="font-family: karla; font-size: 50px;">Our Special Sauce</h1>
+		<p style="font-size: 20px; line-height: 35px;">With more than 20 years of experience we can<br> deliver the best product design</p>
+		<a href=""></a>
+</div><br><br>
+
+
+<div class="container ">
+		<div class="row">
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con6">
+						<div class="container-fluid" style="text-align: left;"><img src="images/logo1.png" style="width: 40px; height: 40px;">&nbsp&nbsp
+						<font style="font-size: 22px; font-family:Karla "> Innovation</font>
+						<p>&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp   We create pixel perfect designs </p>
+			<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthat looks always awesome.</p>
+						</div>
+				</div>    
+		</div>
+</div></div>
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con6">
+						<div class="container-fluid" style="text-align: left;"><img src="images/logo2.png" style="width: 40px; height: 40px;">&nbsp&nbsp
+						<font style="font-size: 22px; font-family:Karla ">Perfection</font>
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp We create pixel perfect designs </p>
+			<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthat looks always awesome.</p>
+				</div>
+				</div>    
+		</div>
+</div></div>
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con6"><div class="container-fluid" style="text-align: left;"><img src="images/logo3.png" style="width: 40px; height: 40px;">&nbsp&nbsp
+						<font style="font-size: 22px; font-family:Karla ">Execution</font>
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp We create pixel perfect designs </p>
+		<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp that looks always awesome.</p>
+				</div></div>    
+		</div>
+</div></div>
+				
+		</div>
+</div><br><br>
+
+
+<div class="container ">
+		<div class="row">
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con7">
+						<div class="container-fluid" style="text-align: left;"><img src="images/logo4.png" style="width: 40px; height: 40px;">&nbsp&nbsp
+						<font style="font-size: 22px; font-family:Karla ">Clarity</font>
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp We create pixel perfect designs </p>
+			<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp that looks always awesome.</p>
+						</div>
+				</div>    
+		</div>
+</div></div>
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con7">
+						<div class="container-fluid" style="text-align: left;"><img src="images/logo5.png" style="width: 40px; height: 40px;">&nbsp&nbsp
+						<font style="font-size: 22px; font-family:Karla ">Honesty</font>
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp We create pixel perfect designs </p>
+			<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp that looks always awesome.</p>
+				</div>
+				</div>    
+		</div>
+</div></div>
+				<div class="col-md-4"><div class="container-fluid con3">
+		<div class="row">
+				<div class="col-md-12 con7"><div class="container-fluid" style="text-align: left;"><img src="images/logo6.png" style="width: 40px; height: 40px;">&nbsp&nbsp
+						<font style="font-size: 22px; font-family:Karla ">Service</font>
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp We create pixel perfect designs </p>
+		<p style="text-align: left;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp that looks always awesome.</p>
+				</div></div>    
+		</div>
+</div></div>
+				
+		</div>
+</div><br><br><br><br><br><br>
+
+
+<div class="container7">
+  <img src="images/imgs14.jpg" class="image-fluid" width="100%" height="550px;">
+  <div class="centered4"><h6 style="letter-spacing: 0.8px;">mission</h6>
+		<h1 style="font-family: karla; font-size: 48px; line-height:60px">Not just your regular design agency we’ve made a long journey to make <br>the difference...</h1>
+		<h6 style="letter-spacing: 0.8px; line-height: 60px;font-size: 12px;">PABLO RAVEL, VERITAS CEO</h6>
+		</div>
+</div><br><br><br><br><br>
+
+
+<div class="container-fluid con4"><h5>clients</h5>
+		<h1 style="font-family: karla; font-size: 50px;">Our Happy Clients</h1>
+		<p style="font-size: 20px; line-height: 35px;">With more than 20 years of experience we can<br> deliver the best product design</p>
+		<a href=""></a>
+</div><br><br>
+
+<div class="container ">
+		<div class="row">
+				<div class="col-md-4">
+<div class="w3-content w3-section" style="width:400px">
+  <img class="mySlides w3-animate-right" src="images/imgs15.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="images/imgs28.jpg" style="width:100%">
+  <img class="mySlides w3-animate-right" src="images/imgs17.jpg" style="width:100%">
+</div></div>
+<div class="col-md-4">
+<div class="w3-content w3-section" style="width:400px">
+ <img class="mySlides1 w3-animate-right" src="images/imgs21.jpg" style="width:100%">
+  <img class="mySlides1 w3-animate-right" src="images/imgs22.jpg" style="width:100%">
+  <img class="mySlides1 w3-animate-right" src="images/imgs23.jpg" style="width:100%">
+</div></div>
+<div class="col-md-4">
+<div class="w3-content w3-section" style="width:400px">
+  <img class="mySlides2 w3-animate-right" src="images/imgs26.jpg" style="width:100%">
+  <img class="mySlides2 w3-animate-right" src="images/imgs27.jpg" style="width:100%">
+  <img class="mySlides2 w3-animate-right" src="images/imgs16.jpg" style="width:100%">
+</div></div>
+</div>
+</div><br><br>
+
+<center><a href=""  class="text1"><button>Let's talk about your project</button></center><br><br><br><br><br><br>
+
+
+<div class="container2-fluid" style="background-color: #d7d9df; height: 870px;"><br><br><br><br>
+		  
+		  <div class="container con4" style="text-align: left"><h6>blog</h6>
+		<font style="font-family: karla; font-size: 50px; line-height: 80px;color: black;">Stay Updated</font>&nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp  &nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp&nbsp        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<font><a href="" style="font-size: 13px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspview all></a></font>
+		</div>
+		
+  <div class="container">
+		<hr style="width: 100%; height: 0.04em; background-color: #AFB7B8; line-height: 20px;">
+  </div>
+
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-6"><img src="images/imgs33.jpg"><br><br><div class="container-fluid cons"><a href=""><h5 style="font-size: 16px;">eCommerce</h5></a>
+		<a href=""><h1 style="font-family: karla; font-size: 28px; ">We Launched veritas Templates This Week</h1></a>
+		<a href="" style="font-size: 13px;">Continue reading ></a><br><hr style="width: 100%; height: 0.04em; background-color: #AFB7B8; line-height: 20px;">
+</div><br><br></div>
+  		<div class="col-6"><img src="images/imgs34.jpg"><br><br><div class="container-fluid cons"><a href=""><h5 style="font-size: 16px;">Studio</h5></a>
+		<a href=""><h1 style="font-family: karla; font-size: 28px; ">New Design Trends For The Next Year</h1></a>
+		<a href="" style=" font-size: 13px;">Continue reading ></a><br><hr style="width: 100%; height: 0.04em; background-color: #AFB7B8; line-height: 20px;">
+</div><br><br></div>
+  	</div>
+  </div>
+
+</div><br><br><br><br><br><br><br>
+
+
+<div class="container-fluid con4"><img src="images/logo7.png" width="3%">
+		<h1 style="font-family: karla; font-size: 50px;">Follow Us</h1>
+		<p style="font-size: 20px; line-height: 35px;">With more than 20 years of experience we can<br> deliver the best product design</p>
+		<a href=""></a>
+</div><br><br>
+
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-sm-3"><div class="hove"><img src="images/imgs35.jpg" class="ima" style="width: 265px;"><div class="midd">
+    <div class="tex"><img src="images/logo7.png" width="50%"></div>
+  </div>
+</div></div>
+  		<div class="col-sm-3"><div class="hove"><img src="images/imgs36.jpg" class="ima" style="width: 265px;"><div class="midd">
+    <div class="tex"><img src="images/logo7.png" width="50%"></div>
+  </div>
+</div></div>
+  		<div class="col-sm-3"><div class="hove"><img src="images/imgs37.jpg" class="ima" style="width: 265px;"><div class="midd">
+    <div class="tex"><img src="images/logo7.png" width="50%"></div>
+  </div>
+</div></div>
+  		<div class="col-sm-3"><div class="hove"><img src="images/imgs38.jpg" class="ima" style="width: 265px;"><div class="midd">
+    <div class="tex"><img src="images/logo7.png" width="50%"></div>
+  </div>
+</div></div>
+  	</div><br>
+  	<div class="row">
+  		<div class="col-sm-12"><hr style="width: 101%; height: 0.04em; background-color: #AFB7B8; line-height: 20px;"></div>
+  	</div>
+  </div><br><br><br><br><br><br><br>
+
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-sm-5"><br><br><br><br>
+		<h1 style="font-family: karla;letter-spacing: 2px; font-size: 33px;line-height:10px;">Let's Work Together</h1><br>
+		<p style="font-family: 'Fira Sans', sans-serif; font-size: 16px; letter-spacing: 0.6px;">With more than 20 years of experience we can<br> deliver the best product design.</p>
+		<a href="" style="text-decoration: none; color: grey">More about us ></a></div>
+  		<div class="col-sm-1"><div class="vl"></div></div>
+  		<div class="col-sm-2 list"><br><br>
+              	<p style="color: grey">Menu</p><br>
+                <a href="" class="cool-link"><p>Home</p></a><br>
+                <a href="" class="cool-link"><p>About Us</p></a><br>
+                <a href="" class="cool-link"><p>Services</p></a><br>
+                <a href="" class="cool-link"><p>Works</p></a><br>
+                <a href="" class="cool-link"><p>Faq</p></a><br>
+                <a href="" class="cool-link"><p>Blog</p></a><br>
+                <a href=""class="cool-link"><p>Contact Us</p></a>
+               </div>
+  		<div class="col-sm-2 list" ><br><br>
+  		     	<p style="color: grey">Social</p><br>
+                <a href="" class="cool-link"><p>Facebook</p></a><br>
+                <a href="" class="cool-link"><p>Instagram</p></a><br>
+                <a href="" class="cool-link"><p>Twitter</p></a><br>
+              </div>
+  		<div class="col-sm-2 list"><br><br>
+                <p style="color: grey">Contact</p><br>
+                <p>Evergreen 27<br style="line-height: 28px;">San Francisco, Cal</p></a><br>
+                <a href="" ><p>800 123-456</p></a>
+                <a href="" ><p>hi@website.com</p></a>
+              </div>
+  	</div><br><br>
+  	<div class="row">
+  	<div class="col-sm-12"><hr style="width: 101%; height: 0.04em; background-color: #AFB7B8; line-height: 20px;"></div>
+  	</div>
+  	<div class="row">
+  	<div class="col-sm-12 lin" style="font-size: 11.5px;"><a href="" >Buy Template</a>  |  Version 1.0  |  Image <a href="">Licensing</a>  |  Made By <a href="">Pablo Ramos</a>  |  Visit <a href="">My Templates</a>  |  Powered By <a href="">Webflow</a></div>
+  	</div>
+  </div><br>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+
+var myIndex1 = 0;
+carousel1();
+
+function carousel1() {
+  var i;
+  var y = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < y.length; i++) {
+    y[i].style.display = "none";  
+  }
+  myIndex1++;
+  if (myIndex1 > y.length) {myIndex1 = 1}    
+  y[myIndex1-1].style.display = "block";  
+  setTimeout(carousel1, 2800);    
+}
+
+var myIndex2 = 0;
+carousel2();
+
+function carousel2() {
+  var i;
+  var z = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < z.length; i++) {
+    z[i].style.display = "none";  
+  }
+  myIndex2++;
+  if (myIndex2 > z.length) {myIndex2 = 1}    
+  z[myIndex2-1].style.display = "block";  
+  setTimeout(carousel2, 3200);    
+}
+</script>
+
+</html>
